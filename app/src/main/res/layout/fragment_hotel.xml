@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/plain_food"
+    android:padding="10dp"
+    tools:context=".HotelFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="392dp"
+            android:layout_height="1300dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp">
+
+            <LinearLayout
+                android:id="@+id/featured_background"
+                android:layout_width="360dp"
+                android:layout_height="88dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#5C936B"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Hotels or Dormitory"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Popular Hotels in Top 4 city"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="110dp"
+                android:layout_marginRight="10dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:id="@+id/almatyhot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="140dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/licei" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="KAZAKH-TURKISH LYCEUM FOR GIRLS Almaty-KAZAKH-TURKISH LYCEUM FOR BOYS Almaty"
+                        android:textSize="18sp" />
+
+                    <RatingBar
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:rating="4.5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address:11th microdistrict, Shchepetkova street 11-Aksai-3 b, 27"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="400dp"
+                android:layout_marginRight="10dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:id="@+id/shymkenthot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="140dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/shymlic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Bilim-Innovation No. 1 for boys in Shymkent - Bilim-Innovation No. 2 for girls in Shymkent"
+                        android:textSize="18sp" />
+
+                    <RatingBar
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:rating="4.0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Al-Farabi district, Adyrbekov street, 135-Enbekshi district, 11 md., corner st. Elshibek Batyra"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="690dp"
+                android:layout_marginRight="10dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:id="@+id/burabayhot"
+                    android:layout_width="411dp"
+                    android:layout_height="265dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="140dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/buraaabay" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="IT Education-innovation-lyceum"
+                        android:textSize="18sp" />
+
+                    <RatingBar
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:rating="5.0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Building 28, Gorny street" />
+
+                    <TextView
+                        android:id="@+id/call3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel:8(71636)21145." />
+
+                    <TextView
+                        android:id="@+id/website3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="it_mektep" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="980dp"
+                android:layout_marginRight="10dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:id="@+id/turkistanhot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="140dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/turkistaan" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Specialized boarding school BILIM-INNOVATION for gifted boys"
+                        android:textSize="18sp" />
+
+                    <RatingBar
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:rating="4.5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Momyshuly street, 57"/>
+
+                    <TextView
+                        android:id="@+id/call4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+7 (72536) 3‒24‒14"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

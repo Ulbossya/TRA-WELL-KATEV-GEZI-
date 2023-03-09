@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plain_food"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="239dp"
+        android:layout_height="186dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/loggo" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="379dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="Username"
+        android:padding="8dp" />
+
+
+    <EditText
+        android:id="@+id/mobileNo"
+        android:layout_width="386dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/username"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="Mobile Number"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="392dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/mobileNo"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="Password"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/cfmPwd"
+        android:layout_width="380dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/password"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="Confirm Password"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cfmPwd"
+        android:layout_alignStart="@+id/cfmPwd"
+        android:layout_alignEnd="@+id/cfmPwd"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="#5C936B"
+        android:elevation="8dp"
+        android:text="SignUp"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUpBtn"
+        android:layout_alignStart="@+id/cfmPwd"
+        android:layout_alignEnd="@+id/cfmPwd"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="33dp"
+        android:backgroundTint="#5C936B"
+        android:text="Already a member?"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
